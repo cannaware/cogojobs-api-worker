@@ -29,5 +29,5 @@ jobs:
             MG_DOMAIN_NAME
             MG_API_KEY
         env:
-          SECRET1: ${{ secrets.MG_DOMAIN_NAME }}
-          SECRET2: ${{ secrets.MG_API_KEY }}
+          MG_DOMAIN_NAME: ${{ secrets.MG_DOMAIN_NAME }}
+          MG_API_KEY: ${{ secrets.MG_API_KEY }}
