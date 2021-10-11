@@ -1,0 +1,12 @@
+name = "cogojobs-api-worker"
+type = "javascript"
+zone_id = ""
+account_id = ""
+route = ""
+workers_dev = true
+compatibility_date = "2021-10-11"
+
+[build]
+command = "yarn install && yarn build"
+[build.upload]
+format = "service-worker"
