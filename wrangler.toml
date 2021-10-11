@@ -1,4 +1,4 @@
-name = "cogojobs-api-worker"
+name = "cogojobs-api"
 type = "javascript"
 zone_id = ""
 account_id = ""
@@ -8,5 +8,6 @@ compatibility_date = "2021-10-11"
 
 [build]
 command = "yarn install && yarn build"
+
 [build.upload]
 format = "service-worker"
