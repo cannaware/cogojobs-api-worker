@@ -34,7 +34,7 @@ export function sendEmail(data: EmailData): Promise<Response> {
   const fetchOpts = {
     method: 'POST',
     headers: {
-      Authorization: 'Basic ' + btoa('api:' + MG_API_KEY),
+      Authorization: 'Basic ' + btoa(`api:${MG_API_KEY}`),
       'Content-Type': 'application/x-www-form-urlencoded',
       'Content-Length': dataUrlEncoded.length.toString(),
     },
