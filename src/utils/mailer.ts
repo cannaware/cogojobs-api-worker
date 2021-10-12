@@ -7,12 +7,14 @@ export interface EmailData {
   from: string;
   to: string;
   subject: string;
-  text: string;
-  html: string;
+  text?: string;
+  html?: string;
   cc?: string;
   bcc?: string;
   'h-Reply-To'?: string;
   'o:testmode'?: boolean;
+  template?: string;
+  'h:X-Mailgun-Variables'?: string;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
